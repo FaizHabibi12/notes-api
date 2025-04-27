@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Notes App</title>
+  </head>
+  <body class="bg-gray-100 font-poppins text-gray-800">
+    <app-header class="shadow-md bg-white"></app-header>
+    <main class="container mx-auto p-4">
+      <note-form class="mb-6"></note-form>
+      <h2 class="text-xl font-semibold mb-4">Catatan Aktif</h2>
+      <section id="notes-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></section>
+      <h2 class="text-xl font-semibold mt-8 mb-4">Catatan Arsip</h2>
+      <section id="archived-notes-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></section>
+    </main>
+    <div id="toast-container" class="fixed bottom-4 right-4 space-y-2"></div>
+  </body>
+</html>
